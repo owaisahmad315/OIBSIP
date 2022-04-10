@@ -1,0 +1,447 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+.header {
+    margin-top: 30px;
+}
+.navbar {
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .navbar-logo {
+    margin-left: 29px;
+    cursor: pointer;
+}
+.navbar .navbar-menu {
+    padding: 10px;
+}
+body > header > div > div.navbar-menu > ul {
+    display: flex;
+}
+.navbar .navbar-menu>ul>li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+body > header > div > div.navbar-menu > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+body > header > div > div.navbar-menu > ul > li > a:hover {
+    color: #0063F7;
+} 
+.navbar-btn {
+    display: flex;
+    margin-right: 29px;
+}
+header>div>div.navbar-btn>div.login-btn>a {
+    cursor: pointer;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header>div>div.navbar-btn>div.started-btn>a {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 25px;
+    background-color: #0063F7;
+    color: white;
+    border-radius: 8px;
+}
+/* now code for screen less than 950px*/
+@media only screen and (max-width: 950px) {
+    .navbar .navbar-logo {
+        width: 100%;
+    }
+    .navbar .navbar-menu>ul {
+        position: relative;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .navbar .navbar-menu>ul > li {
+        position: relative;
+    }
+    .navbar .navbar-menu>ul > li:hover {
+        border-bottom:1px solid #0063F7;
+    }
+    .navbar-btn {
+        flex-direction: column;
+        position:absolute;
+        left: 63%;
+        justify-content: space-around;
+    }
+    header>div>div.navbar-btn>div.login-btn>a {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+    }
+}
+/* now code for screen less than 601px */
+@media only screen and (max-width: 600px) {
+    .navbar .navbar-logo {
+        width: 100%;
+        margin-left: 36%;
+    }
+    .navbar .navbar-menu {
+        width: 100%;
+        
+    }
+    .navbar-btn {
+    position: relative;
+    left: 38%;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    }
+}
+/* now code for screen less than 480px */
+/* code for the section-1 of html */
+@media only screen and (max-width: 600px) {
+    #contact > div.contact-block > form > button {
+        margin-top: 2%;
+    }
+}
+#section-1 {
+
+    height: 616px;
+    margin-top: 100px;   
+}
+#section-1 > .container {
+    display: flex;
+    justify-content: space-between;
+}
+ .left-section {
+    padding: 0px 15px;
+}
+#section-1 > div > div.left-section > div > h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 70px;
+}
+#section-1 > div > div.left-section > div > p {
+    margin-top: 25px;
+    font-size: medium;
+}
+#section-1 > div > div.left-section > ul {
+    display: flex;
+    margin-top: 10%;
+}
+#section-1 > div > div.left-section > ul > li:nth-child(1){
+    margin-right: 30px;
+    list-style: none;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+}
+#section-1 > div > div.left-section > ul > li:nth-child(2) {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: white;
+    padding: 10px 20px;
+}
+.right-section {
+    width: auto;
+    height: 800px;
+    padding: 0px 15px;
+}
+ .container>.right-section> .right-section-content > img {
+    width: 310px;
+    height: 516px;
+}
+/* now code for screen less than 1000px */
+@media only screen and (max-width:1000px) {
+    #section-1 {
+        height: auto;
+    }
+    #section-1 > .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section-1 > div > div.left-section {
+        width: 100%;
+    }
+    #section-1 > div > div.left-section > ul {
+        justify-content: center;
+    }
+    #section-1 > div > div.right-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;   
+    }
+    .section-2 {
+        width: 100%;
+        height: auto;
+    }
+    .section-2-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-2 > div.section-2-container > div.section-2-content > .item {
+        width: 60%;
+        margin-top: 25px;
+    } 
+    #section-3 {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #section-3 > .list-items {
+        width: 100%;
+    }
+    #section-3 > .list-items > ul {
+        display: flex;
+        justify-content: center;
+    }
+    #section-3 > .img {
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+    } 
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+    }
+    
+    #contact > img {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+    }
+    #contact > .contact-image {
+        display: none;
+    }
+    #footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80%;
+    }
+    #footer > div:nth-child(4) > h4 {
+        margin-left: 8%;
+    }
+}
+/* code for the section-2 of html */
+#section-2 {
+    margin-top: 50px;
+    background-color: rgb(229, 230, 231);
+    width: 100%;
+    height:auto;
+}
+.section-2-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+.section-2-heading > h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.section-2-heading > p {
+    font-size: 20px;
+    text-align: center;
+}
+.section-2-content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.section-2-content > .item {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.section-2-content > .item > img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.section-2-content > .item > h4 {
+    margin: 20px 0px 10px 0px;
+}
+.section-2-content > .item > p {
+    text-align: center;
+    margin-left: 20px;
+}
+/* code for the section-3 of html */
+#section-3 {
+    height:auto;
+}
+#section-3 > .list-items > ul > li {
+    list-style:none;
+    margin: 30px 0px 0px 0px;
+}
+#section-3 > .list-items > ul {
+    margin: 50% 0% 0% 10%;
+}
+#section-3 > div.list-items > ul > li > span > i {
+    color: white;
+    margin-right: 30px;
+    padding: 15px;
+    background-color: #2e82ff;
+    border-radius: 50%;
+}
+#section-3 {
+    display: flex;
+    
+    
+}
+#section-3 > .list-items {
+    width: 20%;
+}
+#section-3 > .img {
+    width: 40%;
+    margin-top: 60px;
+}
+#section-3 > .third-container {
+    margin-top: 10%;
+    width: 40%;
+}
+.third-container > p:nth-child(1) {
+    color: #2e82ff;
+    margin-top: 10%;
+    font-size: 20px;
+}
+.third-container > h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.third-container > p:nth-child(2) {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.third-container > button {
+    margin-top: 30px;
+    padding: 11px 24px;
+    background-color: #0063F7;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+/* code for contact section fo html */
+#contact {
+    position: relative;
+    margin-top: 5%;
+    height: auto;
+}
+#contact > img {
+    margin-left: 5%;
+}
+.contact-block {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+.contact-image {
+    position: absolute;
+    bottom: 10%;
+    left: 70%;
+}
+#contact > .contact-block > h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+#contact > .contact-block > p {
+    color: white;
+    font-size: large;
+    margin-right: 5px;
+}
+#contact > div.contact-block > form {
+    margin-top: 35px;
+}
+#contact > div.contact-block > form > input[type=text] {
+    padding: 15px 60px;
+    border-radius: 8px;
+}
+#contact > div.contact-block > form > button {
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+/* css code for the footer section of html */
+
+#footer {
+    margin-top: auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+#footer > .footer-items {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+}
+#footer > .footer-items > h4 {
+    text-align: center;
+    font-weight: bold;
+}
+#footer > div:nth-child(4) > h4 {
+    text-align: left;
+}
+#footer > .footer-items > ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+#footer > .footer-items > ul > li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 7%;
+    cursor: pointer;
+}
+#footer > .footer-items > p {
+    margin-top: 5%;
+}
+#footer > .footer-items > a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#footer > .footer-items > .social-icons {
+    margin-top: 6%;
+}
+#footer > .footer-items > .social-icons > i {
+    margin-right: 3%;
+    font-size: 20px;
+}
+#footer > div:nth-child(1) > div.social-icons > i.fa.fa-facebook-square {
+    color: #2e82ff;
+}
+#footer > div:nth-child(1) > div.social-icons > i.fa.fa-instagram {
+  
+    color:purple;
+}
+#footer > div:nth-child(1) > div.social-icons > i.fa.fa-youtube {
+    color: red;
+}
+#footer > div:nth-child(1) > div.social-icons > i.fa.fa-twitter {
+    color: blue;
+}
