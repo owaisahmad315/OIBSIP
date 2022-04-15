@@ -1,0 +1,347 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color:black;
+}
+header {
+    height: 60px;
+    background-color: rgb(40, 39, 39);
+    width: fit-content;
+}
+#navbar {
+    z-index: 1;
+    height: 89px;
+    position:fixed;
+    width: 100%;
+}
+.navbar-menu {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+#navbar > div > a {
+    color: white;
+    text-decoration: none;
+    font-family:sans-serif;
+} 
+/*///////////////////////////////////////////////////////////////////////////////
+ css code for home section of html 
+ ///////////////////////////////////////////////////////////////////////////////*/
+#home-section {
+   height:900px; 
+   width: 100%;
+}
+#home-section > .home-heading {
+    position: absolute;
+    width: 50%;
+    height: 120px;
+    margin-left:30%;
+    top: 25%;
+    bottom: 70%;
+    left: 3%;
+}
+#home-section > .home-heading > h1, p {
+    color: white;
+    text-align: center;
+}
+#home-section > .home-heading > h1 {
+    font-size: 65px;
+    font-family: 'Rubik', sans-serif;
+}
+#home-section > .home-heading > p {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+#home-section > .home-image {
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+#home-section > .home-image > img { 
+    position: absolute;
+    margin-top: 5em;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////
+ css code for aside section of html 
+/////////////////////////////////////////////////////////////////////////////////*/
+ .side-bar {
+     width: 120px;
+     position:absolute;
+     top:20px;
+     position: fixed;
+     z-index: 1;
+     height:fit-content;
+ }
+ .side-bar > .aside-menu {
+     display: flex;
+     flex-direction: column;
+ }
+ .aside-menu-image {
+     display: flex;
+     justify-content: center;
+ }
+ .side-bar > .aside-menu > a {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+      padding: 30px 20px;
+     background-color: rgb(44, 43, 43);
+     text-decoration: none;
+     cursor: pointer;
+ } 
+ .side-bar > .aside-menu > a > i {
+     font-size:30px;
+ }
+ .side-bar > .aside-menu > a > p {
+     margin-top: 17px;
+ }
+/* /////////////////////////////////////////////////////////////////////////////////////////
+when the device screen is less than 700px 
+///////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width:700px) {
+    .side-bar {
+         display: none;
+    }
+   #home-section > .home-image > img {
+    top: 70%;
+    }  
+    .skills-list {
+        margin-top: 70%;
+    } 
+    #projects {
+    
+        margin-top: 100em;
+    }
+ }
+ /* //////////////////////////////////////////////////////////////////////////////
+ when the device screen is more than 700px
+ ////////////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width:700px) {
+    header {
+        display: none;
+    }
+    /* home section */
+    #home-section > .home-heading {
+        height: 700px;
+    }  
+}
+@media only screen and (max-width:1050px) {
+    #home-section > .home-image > img {
+        top: 70%;
+    }
+   
+}
+/*//////////////////////////////////////////////////////////////////////////////
+ css code for about section of html 
+ /////////////////////////////////////////////////////////////////////////////*/
+ #about-section {
+     position: relative;
+     width: 100%;
+     margin-top: 25%;
+     height: auto;
+     margin-bottom: 10%;
+ }
+ #about-section > h1 {
+     color: white;
+     position: absolute;
+     left: 20%;
+     font-size: 45px;
+     font-family: sans-serif;
+ }
+ #hr1 {
+     position:absolute;
+     left: 20%;
+     top:10%;
+     width: 25%;
+}
+    
+ 
+ #about-section > .about {
+     position: relative;
+     width: 70%;
+     left: 20%;
+     top: 15%;
+     display: flex; 
+ }
+ #about-section > .about > p {
+     font-size: 30px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin-top: 3em;
+ }
+ 
+ .skills {
+     padding: 10%;
+     position: relative;
+ }
+ #about-section > .skills {
+     font-size: 2em;
+     color: white;
+    
+ }
+ #about-section > .skills > h1 {
+     position: absolute;
+     margin-top: 10%;
+     padding: 50px;
+     left: 14%;
+     font-family: sans-serif;
+ }
+ .skills > #hr2 {
+     position: absolute;
+     width: 70%;
+     left: 20%;
+     margin-top: 5px;
+ }
+
+ .skills-list {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     height: auto;
+     width: 95%; 
+     position: relative;
+     left:10%;
+     margin-top: 40%;
+ }
+ body > section#about-section > div.skills > div {
+     margin-top: 10em;
+ }
+ .skills-list > p {
+     margin-top: 5%;
+     font-family: sans-serif;
+ } 
+ .skills-list > .skill-container {
+     margin-top: .4em;
+     background-color: white;
+     width: 90%; 
+ }
+ .skills-list > .skill-container > .skill {
+     padding: 1.9%;
+     background-color: rgb(90, 90, 93);
+ }
+ .download {
+     margin-top: 2rem;
+     padding: 1rem 2rem;
+ }
+ .download > a {
+     text-decoration: none;
+     font-size: 1.1rem;
+     color: black;
+ }
+ #btn-icon {
+     font-size: 18px;
+     margin-right: 1rem;
+ }
+ /*/////////////////////////////////////////////////////////////////////////////////
+ css code for projects section of html 
+ /////////////////////////////////////////////////////////////////////////////////*/
+ #projects {
+     position: relative;
+     width: 80%;
+     height: auto;
+     left: 15%;
+     top: 30%;
+     margin-top: 15%
+ }
+ #projects > h1 {
+     color: white;
+     font-size: 3.5em;
+     margin: 0% 0% 5% 2%;
+     font-family: sans-serif;
+ }
+ #projects >  .grid-container {
+     padding: 20px;
+     margin: 0 auto;
+     display: grid;
+     grid-gap:20px;
+     grid-template-columns: repeat(auto-fit, minmax(500px,2fr));
+ }
+/*/////////////////////////////////////////////////////////////////////////////////////
+ css code for contact section of html 
+ /////////////////////////////////////////////////////////////////////////////////////*/
+ #contact-section {
+     position: relative;
+     left: 15%;
+     width: 80%;
+     height: 100vh;
+     margin-top: 5%;
+ }
+ #contact-section > .heading {
+     font-size: 2em;
+     color: white;
+     font-family: sans-serif;
+ }
+ #contact-section > #address {
+     position: absolute;
+     top: 25%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ #address > p {
+     font-family: sans-serif;
+     font-size: 1.4em;
+     margin-top: 1em;
+ }
+ #address > p > i {
+     font-size: 1.5em;
+     margin-right: 1em;
+ }
+ #contact-section > #email-box {
+     position: absolute;
+     width: 80%;
+     height: 300px;
+     top: 56%;
+     margin-top: 10em;
+ }
+ #email-box > p {
+     text-align: left;
+     font-size: 1.4em;
+     font-family: sans-serif;
+ }
+ #email-box > form {
+     margin-top: 1em;
+ }
+ #email-box > form > input {
+     width: 100%;
+     padding: 1.5em 19em 1.5em 1em;
+     margin-top: 1em;
+     outline: none;
+     font-family: sans-serif;
+ }
+ #form-submit-button {
+     margin-top: 3em;
+     padding: 1em 1.8em;
+ }
+ #form-submit-button > a {
+     text-decoration: none;
+ }
+ #form-submit-button > a > i {
+     margin-right: 1em;
+ } 
+ #contact-section > #email-box > #social-icons {
+     margin-top: 1em;
+     padding: 2em 2em 2em 0em;
+ }
+ #contact-section > #email-box > #social-icons > a > i {
+     padding: 1em;
+     background-color: rgb(94, 95, 95);
+     border-radius: 50%;
+     cursor: pointer;
+     margin-right: 1em;
+     color: white;
+ }
+
+
+
+
+
+
+
